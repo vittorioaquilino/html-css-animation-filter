@@ -74,14 +74,98 @@
 
 .ex-6-img, .ex-7-img, .ex-8-img {
     width: 500px;
-    filter: blur(1);
 }
 
 /* svolgimento esercizio 6 */
 .ex-6-img:hover{
-    filter: blur(1);
+    filter:grayscale(100%);
 }
 /* /svolgimento esercizio 6 */
+
+/* svolgimento esercizio 7 */
+.ex-7-img{
+    animation-duration: 10s;
+    animation-name: change-color;
+}
+
+@keyframes change-color{
+    0%{
+        filter: none;
+    }
+
+    25% {
+        filter: sepia(100%);
+    }
+
+    75% {
+        filter: grayscale(100%);
+    }
+    
+    100%{
+        filter: none;
+    }
+}
+/* /svolgimento esercizio 7 */
+
+/* svolgimento esercizio 8 */
+.ex-8-img{
+    animation-duration: 10s;
+    animation-name: change-color-2;
+}
+
+@keyframes change-color-2{
+    0%{
+        filter: none;
+    }
+
+    25% {
+        filter: grayscale(100%);
+        border-radius: 10%;
+    }
+
+    75% {
+        filter: sepia(100%);
+        border-radius: 10%;
+    }
+    
+    100%{
+        filter: none;
+    }
+}
+/* /svolgimento esercizio 8 */
+
+/* svolgimento esercizio 9 */
+.ex-9-img{
+    animation-duration: 10s;
+    animation-name: change-color-3;
+}
+
+@keyframes change-color-3{
+    0%{
+        filter: none;
+    }
+
+    25% {
+        filter:saturate(100%);
+        border-radius: 10%;
+        width: 300px;
+    }
+
+    75% {
+        filter: opacity(50%);
+        border-radius: 10%;
+        width: 500px;
+    }
+    
+    100%{
+        filter: none;
+    }
+}
+/* /svolgimento esercizio 9*/
+
+
+
+
 
 
 
