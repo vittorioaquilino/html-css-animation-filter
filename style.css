@@ -84,101 +84,75 @@
 
 /* svolgimento esercizio 7 */
 .ex-7-img{
-    animation-duration: 10s;
-    animation-name: change-color;
+    transition: 5s;
 }
 
-@keyframes change-color{
-    0%{
-        filter: none;
-    }
-
-    25% {
-        filter: sepia(100%);
-    }
-
-    75% {
-        filter: grayscale(100%);
-    }
-    
-    100%{
-        filter: none;
-    }
+.ex-7-img:hover{
+    filter: sepia(.5) grayscale(.5);
 }
 /* /svolgimento esercizio 7 */
 
 /* svolgimento esercizio 8 */
 .ex-8-img{
-    animation-duration: 10s;
-    animation-name: change-color-2;
+    transition: 5s;
 }
 
-@keyframes change-color-2{
-    0%{
-        filter: none;
-    }
-
-    25% {
-        filter: grayscale(100%);
-        border-radius: 10%;
-    }
-
-    75% {
-        filter: sepia(100%);
-        border-radius: 10%;
-    }
-    
-    100%{
-        filter: none;
-    }
+.ex-8-img:hover{
+    filter: sepia(.5) grayscale(.5);
+    border-radius: 10%;
 }
 /* /svolgimento esercizio 8 */
-
-/* svolgimento esercizio 9 */
-.ex-9-img{
-    animation-duration: 10s;
-    animation-name: change-color-3;
-}
-
-@keyframes change-color-3{
-    0%{
-        filter: none;
-    }
-
-    25% {
-        filter:saturate(100%);
-        border-radius: 10%;
-        width: 300px;
-    }
-
-    75% {
-        filter: opacity(50%);
-        border-radius: 10%;
-        width: 500px;
-    }
-    
-    100%{
-        filter: none;
-    }
-}
-/* /svolgimento esercizio 9*/
-
-
-
-
-
-
 
 .ex-9-img {
     margin: 50px 100px;
     width: 400px;
+    transition: 7s;
 }
+
+/* svolgimento esercizio 9 */
+.ex-9-img:hover {
+    filter: grayscale(.6) sepia(.5);
+    border-radius: 10%;
+    transform: scale(1.5);
+}
+/* /svolgimento esercizio 9*/
+
 .ex-10-icon {
     font-size: 60px;
+    animation: turn 6s linear;
 }
+
+/* svolgimento esercizio 10*/
+
+@keyframes turn {
+    0% {
+        transform: rotate(1turn);
+    }
+}
+/* /svolgimento esercizio 10*/
+
 .ex-11-icon {
     font-size: 60px;
+    animation: turn-2 5s linear;
 }
+
+/* svolgimento esercizio 11*/
+@keyframes turn-2{
+    0%{
+        transform: rotate(0);
+    }
+
+    90%{
+        transform: rotate(320deg);
+    }
+
+    100%{
+        transform: rotate(0);
+    }
+}
+/* /svolgimento esercizio 11*/
+
+
 .ex-12-button, .ex-13-button {
     position: relative;
     display: block;
